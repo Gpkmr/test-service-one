@@ -25,6 +25,7 @@ func main() {
 }
 
 func SrvOne(w http.ResponseWriter, r *http.Request) {
+	// get service two URL from env
 	srvTwoURL := os.Getenv("SERVICE_TWO_URL")
 	if srvTwoURL == "" {
 		log.Fatal("Service two URL missing !\n")

@@ -18,7 +18,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: ${{ secrets.GAR_HOST }}/${{ secrets.GAR_REPO }}/registry-dev/srvone
+          images: ${{ secrets.GAR_HOST }}/${{ secrets.GCP_PROJECT }}/${{ secrets.GAR_REPO }}/srvone
       - name: Login to GAR
         uses: docker/login-action@v2
         with:

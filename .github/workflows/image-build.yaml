@@ -1,14 +1,9 @@
 name: Image Build And Push
 
-on:
-  workflow_dispatch:
-    
-  #push:
-    #branches: 
-      #- main
-    #paths:
-      #- main.go
-      #- Dockerfile
+on: 
+  push:
+    branches: 
+      - main
 
 jobs:
   gcp:
